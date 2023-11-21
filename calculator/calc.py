@@ -1,8 +1,8 @@
 '''
-Gets an operand and ensures the input is of float type
+Gets an operand and ensures the input is of float type.
+
 @return The inputted operand
 '''
-
 def get_operand():
     while True:
         try:
@@ -34,7 +34,7 @@ def main():
             case '*':
                 print("Result: %g" %(operand1 * operand2))
             case '/':
-                while operand2 == 0:
+                while operand2 == 0: # no division by 0
                     try:
                         operand2 = float(input("Enter the second operand: "))
                     except:
